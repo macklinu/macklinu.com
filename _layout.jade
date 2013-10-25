@@ -1,0 +1,10 @@
+!!!
+html
+  head
+    != partial("/_shared/css")
+  body
+    header
+      != partial("/_shared/nav")
+    != yield
+    != partial("/_shared/js")
+    footer

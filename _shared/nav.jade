@@ -1,0 +1,9 @@
+mixin link(title)
+  - var title_lower = title.toLowerCase()
+  a(href="/#{title_lower}", class="#{ current.source == 'title' ? 'active' : '' }") #{title}
+
+nav
+  a(href="/", class="#{ current.source == 'index' ? 'active' : '' }") Home
+  +link("About")
+  +link("Blog")
+  +link("Projects")
