@@ -1,0 +1,362 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Content
+==================================================
+  #Site Styles
+  #Page Styles
+  #Media Queries
+  #Font-Face */
+
+/* #Site Styles
+================================================== */
+// @import "./webfonts/stylesheet.less";
+
+@sans: 'EdmondSans-Medium';
+@serif: 'EdmondSans-Medium';
+@header-bg: #136997;
+@projects-bg: #535B59;
+@footer-bg: #D08A3C;
+// @about-bg;
+@blog-bg: #4DAE4E;
+
+header{
+  width:100%;
+  // background:url('../images/header.png') center top no-repeat #181818;
+  background: @header-bg;
+  height:340px;
+  background-size:cover;
+  -moz-background-size:cover;
+  -webkit-background-size:cover;
+  h1 {
+    font-family: @sans;
+    font-weight: 200;
+    font-size: 48px;
+    text-align: center;
+    color:#fff; 
+    padding-top:50px;
+  }
+  h2{
+    font-family: @sans;
+    font-size: 18px;
+    text-align: center;
+    color:#fff; 
+  }
+}
+
+#about{
+  width:100%;
+  height:auto;
+  background:#fff;
+  p {
+    font-family: @serif;
+    font-size: 16px;
+    color:#494949; 
+    margin-top:45px;
+  }
+}
+
+.title {
+  hr{
+    margin:0 auto;
+    border:0;
+    border-top: 1px solid #343434;
+    &.first{
+      width:180px;
+    }
+    &.last{
+      width:140px;
+      margin-top:5px;
+    }
+  }
+  h2 {
+    font-family: @sans;
+    font-size: 14px;
+    color:#343434;
+    // text-align: center;
+    position: relative;
+    top:-23px;
+    // background-color:#fff;
+    width:50px;
+    padding:0 15px 0 15px;
+    margin:0 auto;
+  }
+}
+
+#projects{
+  width:100%;
+  height:auto;
+  background: @projects-bg;
+  overflow: hidden;
+}
+
+#projects .item {
+  height:200px;
+  // background: #fff;
+  overflow: hidden;
+  margin-top:20px;
+  display: relative;
+
+  a img {
+    // -webkit-border-radius: 100px;
+    // border-radius: 100px;
+
+    &:hover {
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  .item-desc {
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 0;
+    color: white;
+    // height: 100%;
+    // width: 100%;
+    background-color: #18bc9c;
+  }
+}
+
+
+#projects .title h2{
+  width:70px;
+  background:@projects-bg;
+  color: white;
+}
+
+#blog {
+  width:100%;
+  height:auto;
+  background: @blog-bg;
+  overflow: hidden;
+
+  .title {
+    h2 {
+      color: white;
+    }
+  }
+}
+
+footer {
+  height:auto;
+  width:100%;
+  background:@footer-bg;
+  overflow: hidden;
+  .title {
+    h2 {
+      width:70px;
+      background:@footer-bg;
+      color:#fff;
+    }
+    hr {
+      border-top: 1px solid #fff;
+    }
+  }
+  .buttons{
+    margin: 0 auto;
+    width:180px;
+  }
+  .cv{
+    width:174px;
+    height:35px;
+    background:#e7a75f;
+    border-bottom: 2px solid #ce832e;
+    p {
+      text-align: center;
+      padding-top:8px;
+      color:#fff;
+      font-family: 'Avenir';
+    }
+    &:hover{
+      width:174px;
+      height:35px;
+      background:#de994b;
+      border-bottom: 2px solid #de994b;
+    }
+  }
+}
+
+.photo {
+  // margin: 10px;
+  margin-top: 30px;
+  // float: left;
+  // background: #e45e39;
+  //overflow: hidden;
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    width: 150px;
+    height: 150px;
+  }
+}
+/* #Page Styles
+================================================== */
+
+/* #Media Queries
+================================================== */
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+  .photo {
+    margin-top: 30px;
+    img {
+      width: 125px;
+      height: 125px;
+    }
+  }
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+  .photo {
+    margin-top: 30px;
+    img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  #projects .item{
+   width:300px;
+ }
+ #projects .container{
+   width:300px;
+ }
+ #projects .title{
+   width:300px;
+ }
+
+ body{
+   text-align: center;
+ }
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+  body{
+   text-align: center;
+ }
+}
+
+
+/* #Font-Face
+================================================== */
+/* Regular */
+@font-face {
+    font-family: 'League Gothic';
+    src: url('webfonts/leaguegothic-italic-webfont.eot');
+    src: url('webfonts/leaguegothic-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/leaguegothic-italic-webfont.woff') format('woff'),
+         url('webfonts/leaguegothic-italic-webfont.ttf') format('truetype'),
+         url('webfonts/leaguegothic-italic-webfont.svg#league_gothic_italicregular') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+/* Italic */
+@font-face {
+    font-family: 'League Gothic';
+    src: url('webfonts/leaguegothic-regular-webfont.eot');
+    src: url('webfonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/leaguegothic-regular-webfont.woff') format('woff'),
+         url('webfonts/leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('webfonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Condensed */
+@font-face {
+    font-family: 'League Gothic Condensed';
+    src: url('webfonts/leaguegothic-condensed-regular-webfont.eot');
+    src: url('webfonts/leaguegothic-condensed-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/leaguegothic-condensed-regular-webfont.woff') format('woff'),
+         url('webfonts/leaguegothic-condensed-regular-webfont.ttf') format('truetype'),
+         url('webfonts/leaguegothic-condensed-regular-webfont.svg#league_gothic_condensed-Rg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Condensed Italic */
+@font-face {
+    font-family: 'League Gothic Condensed';
+    src: url('webfonts/leaguegothic-condensed-italic-webfont.eot');
+    src: url('webfonts/leaguegothic-condensed-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/leaguegothic-condensed-italic-webfont.woff') format('woff'),
+         url('webfonts/leaguegothic-condensed-italic-webfont.ttf') format('truetype'),
+         url('webfonts/leaguegothic-condensed-italic-webfont.svg#league_gothic_condensed_itaRg') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Klinic Slab';
+    src: url('webfonts/KlinicSlabMedium.otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Klinic Slab Light';
+    src: url('webfonts/KlinicSlabLight.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Airplane';
+    src: url('webfonts/Airplane.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EdmondSans-Regular';
+    src: url('webfonts/Edmondsans-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'EdmondSans-Medium';
+    src: url('webfonts/Edmondsans-Medium.otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'EdmondSans-Bold';
+    src: url('webfonts/Edmondsans-Bold.otf');
+    font-weight: normal;
+    font-style: normal;
+
+}

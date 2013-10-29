@@ -1,13 +1,22 @@
 !!!
 html
   head
-    != partial("/_shared/title")
+    title macklin
+    //-!= partial("/_shared/title")
     //-title #{current.path.length}
-    != partial("/_shared/css")
+    != partial('/_shared/css')
   body
     header
-      != partial("/_shared/nav")
-    .container
-      != yield
-    != partial("/_shared/js")
+      != partial('_sections/header.jade')
+    section#about
+      != partial('_sections/about.jade')
+    section#projects
+      != partial('_sections/projects.jade')
+    section#blog
+      != partial('_sections/blog.jade')
+    //-!= partial("/_shared/nav")
+    //-.container
+    //-!= yield
     footer
+      != partial('_sections/footer.jade')
+    != partial('/_shared/js')

@@ -1,0 +1,7 @@
+.container.margin-40
+  != partial('../_shared/section-title.jade', {_title: 'about'})
+  //-
+    .photo.three.columns
+      img(src="http://api.randomuser.me/0.2/portraits/men/10.jpg")
+  .info-text.sixteen.columns
+    p #{info.text}

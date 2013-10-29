@@ -1,0 +1,11 @@
+mixin project-link(p)
+  .item.four.columns
+    a(href="#{p}")
+      img(src="http://dummyimage.com/200x200/000000/ffffff.png")
+      //-.item-desc
+        p some info
+
+.container.margin-40
+  != partial('../_shared/section-title.jade', {_title: 'projects'})
+  - for (var x = 0; x < 9; x++)
+    +project-link(x)

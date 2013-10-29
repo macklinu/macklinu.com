@@ -1,0 +1,17 @@
+mixin social-link(s)
+  .css-social.trans
+      //- .social-button(class="#{s.site}")
+      //-i.fa.fa-2x(class="#{s.icon}")
+      a(href="#{s.url}/#{s.name}")
+        span.fa-stack.fa-lg
+          i.fa.fa-circle.fa-stack-2x
+          i.fa(class="#{s.icon}").fa-stack-1x.fa-inverse
+        //-.social-text(class="#{s.site}"): p #{s.name}
+  
+
+.container.margin-40
+  != partial('../_shared/section-title.jade', {_title: 'contact'})
+  .buttons
+    for s in social
+      if s.visible
+        +social-link(s)

@@ -1,0 +1,352 @@
+/**
+ * Social CSS Buttons - CSSocial 1.0.0
+ * 
+ * Social buttons made with CSS & a few images
+ * 
+ * Copyright (c) 2013 postcreative.
+ * http://www.postcreative.nl
+ * 
+ * Date: Mon Feb 11 20:45:02 2013
+ */
+ 
+a{
+	text-decoration: none;
+}
+
+.css-social{ /* Wrap for the button */
+	width:35px;
+	height:35px;
+	margin:3px;
+	display: inline-block;
+	position: relative;
+}
+.social-button{ /* The button with image */
+	height:35px;
+	width:35px;
+	position: absolute;
+	z-index:2;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.social-button img{ /* Social image */
+	margin:8px 7px;
+}
+.social-text{ /* The text in the animation */
+	width:0;
+	height:35px;
+	margin-left:28px;
+	position: absolute;
+	z-index: 1;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	transition:width 0.15s;
+	-moz-transition:width 0.15s; 
+	-webkit-transition:width 0.15s; 
+	-o-transition:width 0.15s; 
+	transition:z-index 0s;
+	-moz-transition:z-index 0s; 
+	-webkit-transition:z-index 0s; 
+	-o-transition:z-index 0s; 
+}
+
+
+.css-social:hover .social-text{ /* Start animation */
+	width:130px;
+	transition:width 0.15s;
+	-moz-transition:width 0.15s; 
+	-webkit-transition:width 0.15s; 
+	-o-transition:width 0.15s; 
+	z-index:10;
+}
+
+.css-social:hover .social-text p{ /* Start animation */
+	opacity: 1;
+	width:130px;
+	animation: textsize 0.2s;
+	-webkit-animation:textsize 0.2s;
+	-webkit-transition-property:opacity; 
+	-webkit-transition-duration:0.1s;
+	-webkit-transition-delay:0.05s;
+}
+
+@keyframes textsize /* Animation for smooth text */
+{
+from {width: 0;}
+to {width: 130px;}
+}
+
+@-webkit-keyframes textsize
+{
+from {width: 0;}
+to {width: 130px;}
+}
+
+
+.css-social:hover .social-button{ /* Let the roll-out button go over the other buttons */
+	z-index: 11;
+}
+
+.social-text p{ /* Text styling */
+	width:0;
+	text-align: center;
+	margin-top:7px;
+	color:#fff;
+	font-family: "HelveticaNeue", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	opacity: 0;
+}
+
+
+
+/* CHANGE THE COLOURS HERE */
+
+
+
+/* TWITTER */
+.social-button.twitter{ background:url('../images/twitter.png') center center no-repeat #2cbff7;}
+.social-text.twitter{ background:#1cafe7; }
+.social-button.twitter, .social-text.twitter{ border-bottom: 2px solid #1da8dd; }
+
+
+/* DRIBBBLE */
+.social-button.dribbble{ background:url('../images/dribbble.png') center center no-repeat #fb6097; }
+.social-text.dribbble{ background:#f34986; }
+.social-button.dribbble, .social-text.dribbble{ border-bottom: 2px solid #e24079; }
+
+/* PHONE */
+.social-button.phone{ background:url('../images/phone.png') center center no-repeat #41c737; }
+.social-text.phone{ background:#2cb722; }
+.social-button.phone, .social-text.phone{ border-bottom: 2px solid #1aa510; }
+
+
+/* EMAIL */
+.social-button.email{ background:url('../images/email.png') center center no-repeat #afafaf; }
+.social-text.email{ background:#a1a1a1; }
+.social-button.email, .social-text.email{ border-bottom: 2px solid #919090; }
+
+/* PINTEREST */
+.social-button.pinterest{ background:url('../images/pinterest.png') center center no-repeat #cb2027; }
+.social-text.pinterest{ background:#ba151c; }
+.social-button.pinterest, .social-text.pinterest{ border-bottom: 2px solid #a60b11; }
+
+/* FACEBOOK */
+.social-button.facebook{ background:url('../images/facebook.png') center center no-repeat #3b5a97; }
+.social-text.facebook{ background:#2d4b85; }
+.social-button.facebook, .social-text.facebook{ border-bottom: 2px solid #19356b; }
+
+/* INSTAGRAM */
+.social-button.instagram{ background:url('../images/instagram.png') center center no-repeat #9a664f; }
+.social-text.instagram{ background:#87533b; }
+.social-button.instagram, .social-text.instagram{ border-bottom: 2px solid #6e371d; }
+
+/* YOUTUBE */
+.social-button.youtube{ background:url('../images/youtube.png') center center no-repeat #4d4d4d; }
+.social-text.youtube{ background:#383737; }
+.social-button.youtube, .social-text.youtube{ border-bottom: 2px solid #262626; }
+
+/* SKYPE */
+.social-button.skype{ background:url('../images/skype.png') center center no-repeat #00aeef; }
+.social-text.skype{ background:#029cd6; }
+.social-button.skype, .social-text.skype{ border-bottom: 2px solid #0488ba; }
+
+/* FORRST */
+.social-button.forrst{ background:url('../images/forrst.png') center center no-repeat #5b9a68; }
+.social-text.forrst{ background:#368647; }
+.social-button.forrst, .social-text.forrst{ border-bottom: 2px solid #1b652a; }
+
+/* LINKEDIN */
+.social-button.linkedin{ background:url('../images/linkedin.png') center center no-repeat #007fb1; }
+.social-text.linkedin{ background:#016d98; }
+.social-button.linkedin, .social-text.linkedin{ border-bottom: 2px solid #035475; }
+
+/* GOOGLE PLUS */
+.social-button.google{ background:url('../images/googleplus.png') center center no-repeat #df4c39; }
+.social-text.google{ background:#c33320; }
+.social-button.google, .social-text.google{ border-bottom: 2px solid #b02715; }
+
+/* VIMEO */
+.social-button.vimeo{ background:url('../images/vimeo.png') center center no-repeat #85d450; }
+.social-text.vimeo{ background:#6ebe39; }
+.social-button.vimeo, .social-text.vimeo{ border-bottom: 2px solid #53a41d; }
+
+/* LASTFM */
+.social-button.lastfm{ background:url('../images/lastfm.png') center center no-repeat #d51007; }
+.social-text.lastfm{ background:#c10800; }
+.social-button.lastfm, .social-text.lastfm{ border-bottom: 2px solid #a60902; }
+
+/* BLOGGER */
+.social-button.blogger{ background:url('../images/blogger.png') center center no-repeat #f48120; }
+.social-text.blogger{ background:#dc6e12; }
+.social-button.blogger, .social-text.blogger{ border-bottom: 2px solid #c55e09; }
+
+/* DEVIANTART */
+.social-button.deviantart{ background:url('../images/deviantart.png') center center no-repeat #516457; }
+.social-text.deviantart{ background:#3e5044; }
+.social-button.deviantart, .social-text.deviantart{ border-bottom: 2px solid #28372d; }
+
+/* BEBO */
+.social-button.bebo{ background:url('../images/bebo.png') center center no-repeat #d53838; }
+.social-text.bebo{ background:#c12727; }
+.social-button.bebo, .social-text.bebo{ border-bottom: 2px solid #aa1818; }
+
+/* FLICKR */
+.social-button.flickr{ background:url('../images/flickr.png') center center no-repeat #ff0084; }
+.social-text.flickr{ background:#d1036e; }
+.social-button.flickr, .social-text.flickr{ border-bottom: 2px solid #b2035e; }
+
+/* STUMBLE */
+.social-button.stumble{ background:url('../images/stumbled.png') center center no-repeat #f65e46; }
+.social-text.stumble{ background:#e04a32; }
+.social-button.stumble, .social-text.stumble{ border-bottom: 2px solid #c8351e; }
+
+/* RSS */
+.social-button.rss{ background:url('../images/rss.png') center center no-repeat #ff6501; }
+.social-text.rss{ background:#e05902; }
+.social-button.rss, .social-text.rss{ border-bottom: 2px solid #cc5102; }
+
+/* GITHUB */
+.social-button.git{ background:url('../images/github.png') center center no-repeat #3a3a3a; }
+.social-text.git{ background:#2c2c2c; }
+.social-button.git, .social-text.git{ border-bottom: 2px solid #1e1e1e; }
+
+/* YAHOO */
+.social-button.yahoo{ background:url('../images/yahoo.png') center center no-repeat #752c95; }
+.social-text.yahoo{ background:#5d197b; }
+.social-button.yahoo, .social-text.yahoo{ border-bottom: 2px solid #450d5d; }
+
+/* WORDPRESS */
+.social-button.wordpress{ background:url('../images/wordpress.png') center center no-repeat #2d2d2d; }
+.social-text.wordpress{ background:#212121; }
+.social-button.wordpress, .social-text.wordpress{ border-bottom: 2px solid #141414; }
+
+/* DIGG */
+.social-button.digg{ background:url('../images/digg.png') center center no-repeat #265f95; }
+.social-text.digg{ background:#184d7f; }
+.social-button.digg, .social-text.digg{ border-bottom: 2px solid #0d3861; }
+
+/* TUMBLR */
+.social-button.tumblr{ background:url('../images/tumblr.png') center center no-repeat #617085; }
+.social-text.tumblr{ background:#49586d; }
+.social-button.tumblr, .social-text.tumblr{ border-bottom: 2px solid #36455a; }
+
+/* SOUNDCLOUD */
+.social-button.soundcloud{ background:url('../images/soundcloud.png') center center no-repeat #fd7117; }
+.social-text.soundcloud{ background:#e0681a; }
+.social-button.soundcloud, .social-text.soundcloud{ border-bottom: 2px solid #c7550a; }
+
+/* SPOTIFY */
+.social-button.spotify{ background:url('../images/spotify.png') center center no-repeat #60af00; }
+.social-text.spotify{ background:#569c01; }
+.social-button.spotify, .social-text.spotify{ border-bottom: 2px solid #4a8601; }
+
+/* APPSTORE */
+.social-button.appstore{ background:url('../images/appstore.png') center center no-repeat #007dcb; }
+.social-text.appstore{ background:#0369a9; }
+.social-button.appstore, .social-text.appstore{ border-bottom: 2px solid #015386; }
+
+/* ANDROID */
+.social-button.android{ background:url('../images/android.png') center center no-repeat #a4c639; }
+.social-text.android{ background:#8bac23; }
+.social-button.android, .social-text.android{ border-bottom: 2px solid #708e10; }
+
+/* EVERNOTE */
+.social-button.evernote{ background:url('../images/evernote.png') center center no-repeat #6bb130; }
+.social-text.evernote{ background:#599d1f; }
+.social-button.evernote, .social-text.evernote{ border-bottom: 2px solid #42810c; }
+
+/* ITUNES */
+.social-button.itunes{ background:url('../images/itunes.png') center center no-repeat #189ad7; }
+.social-text.itunes{ background:#0a84bd; }
+.social-button.itunes, .social-text.itunes{ border-bottom: 2px solid #026c9d; }
+
+/* PAYPAL */
+.social-button.paypal{ background:url('../images/paypal.png') center center no-repeat #32689a; }
+.social-text.paypal{ background:#1d5283; }
+.social-button.paypal, .social-text.paypal{ border-bottom: 2px solid #0d3c67; }
+
+
+
+
+/* 
+	STYLES 
+			*/
+
+/* BLACK */
+
+.black div{
+	background-color:#333 !important; 
+	border-color:#000 !important;
+}
+
+/* NO ANIMATION */
+
+.no-animation:hover .social-text, .no-animation:hover .social-text p{
+	width:0;
+	animation: none;
+	-webkit-animation:none;
+	opacity: 0;
+}
+
+
+/* WHITE */
+
+.white div{
+	background-color: transparent !important; 
+	border:1px solid #fff !important;
+}
+
+.white div:nth-child(2){
+	display: none;
+}
+
+/* BLUE */
+
+.blue div:nth-child(1){
+	background-color:#2b71d2;
+	border-color:#0b4698;
+}
+
+.blue div:nth-child(2){
+	background-color:#1659b5;
+	border-color:#0b4698;
+}
+
+/* RED */
+
+.red div:nth-child(1){
+	background-color:#f5293e;
+	border-color:#d10c20;
+}
+
+.red div:nth-child(2){
+	background-color:#e01d31;
+	border-color:#d10c20;
+}
+
+/* GREEN */
+
+.green div:nth-child(1){
+	background-color:#34c836;
+	border-color:#0ca60e;
+}
+
+.green div:nth-child(2){
+	background-color:#16b218;
+	border-color:#0ca60e;
+}
+
+/* TRANSPARENT */
+
+
+.trans div:nth-child(1){
+	background-color:#e7a75f;
+	border-color:#ce832e;
+}
+
+.trans div:nth-child(2){
+	background-color:#e69b47;
+	border-color:#ca7f2a;
+}
+

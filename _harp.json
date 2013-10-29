@@ -5,40 +5,43 @@
       "last": "Underdown",
       "social": "macklinu"
     },
+    "info": {
+      "text": "I live in the wonderful city of Detroit, and I make software, music, and art."
+    },
     "social": [
       {
         "site": "github",
         "name": "macklinu",
         "url": "https://github.com",
-        "icon": "",
+        "icon": "fa-github",
         "visible": true
       },
       {
         "site": "facebook",
         "name": "macklinu",
         "url": "https://facebook.com",
-        "icon": "",
+        "icon": "fa-facebook",
         "visible": false
       },
       {
         "site": "twitter",
         "name": "macklinu",
         "url": "https://twitter.com",
-        "icon": "",
+        "icon": "fa-twitter",
         "visible": true
       },
       {
-        "site": "last.fm",
+        "site": "linkedin",
         "name": "macklinu",
-        "url": "http://last.fm/user",
-        "icon": "",
+        "url": "http://linkedin.com/pub",
+        "icon": "fa-linkedin",
         "visible": true
       },
       {
         "site": "instagram",
         "name": "macklinu",
         "url": "https://instagram.com",
-        "icon": "",
+        "icon": "fa-instagram",
         "visible": true
       }
     ]
