@@ -1,14 +1,15 @@
+@bg: #F5F4EF;
 @blue: #3a6bff;
 
 body {
   font-family: "Avenir Next", "Trebuchet MS", "Helvetica", "Arial", sans-serif;
   font-size: 1.25em;
   line-height: 1.4;
-  background: #F0F0F0;
+  background: @bg;
   color: #444;
   margin: 0 auto;
-  padding: 1.25em 1.25em 5em 1.25em;
-  max-width: 35em;
+  // padding: 1.25em 1.25em 5em 1.25em;
+  // max-width: 10em;
 }
 
 h1 {
@@ -26,6 +27,11 @@ ul, ol {
 
 ul, li {
   list-style: none;
+
+  &.project img {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 a {
@@ -33,15 +39,22 @@ a {
   text-decoration: none;
   &:hover, &:focus, &:active {
     // color: lighten(@blue, 10%);
-    background: yellow;
-    color: black
+    // background: yellow;
+    // color: black
   }
 }
 
-nav a {
-  padding: 0.5em;
-  margin-left: -0.5em;
-  margin-right: 0.5em;
+nav {
+  padding: 1.5em 0 0 0;
+  a {
+    padding: 0.5em;
+    margin-left: -0.5em;
+    margin-right: 0.5em;
+
+    &.active {
+      font-weight: bold;
+    }
+  }
 }
 
 footer {
@@ -50,6 +63,22 @@ footer {
 
 img {
   width: 100%;
+
+  &#avatar {
+    width: 100px;
+    height: 100px;
+    // margin: 20px;
+    float: left;
+    background: #e45e39;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    // overflow: hidden;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.0);
+    }
+  }
+
   @media (min-width: 35em) {
     width: 120%;
     margin-left: -10%;

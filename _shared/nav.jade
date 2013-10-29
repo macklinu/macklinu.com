@@ -1,9 +1,12 @@
 mixin link(title)
-  - var title_lower = title.toLowerCase()
-  a(href="/#{title_lower}", class="#{ current.source == 'title' ? 'active' : '' }") #{title}
+  //- var title_lower = title.toLowerCase()
+  - var active = current.path[0] == title ? 'active' : '' 
+  li: a(href="/#{title}", class="#{active} two columns") #{title}
 
-nav
-  a(href="/", class="#{ current.source == 'index' ? 'active' : '' }") Home
-  +link("About")
-  +link("Blog")
-  +link("Projects")
+.container
+  nav
+    //-a(href="/", class="#{ current.path[0] == 'index' ? 'active' : '' }") Home
+    +link("about")
+    +link("projects")
+    +link("blog")
+    li: a.two.columns(href="/"): img#avatar(src="http://api.randomuser.me/0.2/portraits/men/10.jpg")

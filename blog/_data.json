@@ -1,20 +1,23 @@
 {
-  "a-good-article": {
-    "title": "A Good Article",
-    "content": "First good article.",
-    "date": "2013-02-08 17:30:26",
-    "id": 3
-  },
-  "a-complicated-article": {
-    "title": "Another Article",
-    "content": "Another one!",
-    "date": "2013-07-08 09:30:26",
-    "id": 2
-  },
-  "last-article": {
-    "title": "Last article",
-    "content": "Another one!",
-    "date": "2012-02-12 07:00:26",
-    "id": 1
+  "articles": {
+    "a-good-article": {
+      "title": "A Good Article",
+      "content": "First good article.",
+      "date": "2013-02-08 17:30:26",
+      "id": 3,
+      "tags": ["programming", "music"]
+    },
+    "a-complicated-article": {
+      "title": "Another Article",
+      "content": "Another one!",
+      "date": "2013-07-08 09:30:26",
+      "id": 2
+    },
+    "last-article": {
+      "title": "Last article",
+      "content": "Another one!",
+      "date": "2012-02-12 07:00:26",
+      "id": 1
+    }
   }
 }

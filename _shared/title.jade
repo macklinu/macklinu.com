@@ -1,0 +1,23 @@
+//-
+  if current.path.length > 1
+    if current.path[0] == 'blog'
+      if current.path[1] == 'index'
+        title blog
+      else
+        title #{current.path[0]} | #{public.blog.data.articles[current.path[1]].title.toLowerCase()}
+
+- var n = name.first.toLowerCase()
+
+case current.path[0]
+  when 'index'
+    title #{n} | home
+  when 'about'
+    title #{n} | about
+  when 'blog'
+    if current.path[1] == 'index'
+      title #{n} | blog
+    else
+      - var post = public.blog.data.articles[current.path[1]].title.toLowerCase()
+      title #{n} | blog | #{post}
+  when 'projects'
+    title #{n} | projects

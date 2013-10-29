@@ -1,7 +1,10 @@
+- var data = public.blog.data
+
 h1 Blog
+a(href="../") back
 #articles
   ul
-    each article in public.blog.data
+    each article in data.articles
       - var url = article.title.toLowerCase().replace(/ /g, '-')
       li
         a(href="/blog/#{url}", data-id="#{article.id}") #{ article.title }

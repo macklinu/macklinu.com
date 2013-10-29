@@ -1,0 +1,46 @@
+{
+  "globals": {
+    "name": {
+      "first": "Macklin",
+      "last": "Underdown",
+      "social": "macklinu"
+    },
+    "social": [
+      {
+        "site": "github",
+        "name": "macklinu",
+        "url": "https://github.com",
+        "icon": "",
+        "visible": true
+      },
+      {
+        "site": "facebook",
+        "name": "macklinu",
+        "url": "https://facebook.com",
+        "icon": "",
+        "visible": false
+      },
+      {
+        "site": "twitter",
+        "name": "macklinu",
+        "url": "https://twitter.com",
+        "icon": "",
+        "visible": true
+      },
+      {
+        "site": "last.fm",
+        "name": "macklinu",
+        "url": "http://last.fm/user",
+        "icon": "",
+        "visible": true
+      },
+      {
+        "site": "instagram",
+        "name": "macklinu",
+        "url": "https://instagram.com",
+        "icon": "",
+        "visible": true
+      }
+    ]
+  }
+}

@@ -1,4 +1,9 @@
-h1 Projects
-
-each i in public.projects.data
-  p #{i.name}
+.clearfix
+  .row.sixteen.columns
+    h1 Projects
+  .row
+    each i in public.projects.data
+      li.project.three.columns
+        a(href="./#{i.url}")
+          img(src="/assets/img/#{i.img}")
+          caption #{i.name}
